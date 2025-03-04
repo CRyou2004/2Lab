@@ -24,10 +24,9 @@ use IEEE.STD_LOGIC_1164.ALL;
 use ieee.numeric_std.all;
 
 entity sevenseg_decoder_tb is
---  Port ( );
 end sevenseg_decoder_tb;
 
-architecture Behavioral of sevenseg_decoder_tb is
+architecture test_bench of sevenseg_decoder_tb is
 
     component sevenseg_decoder is
     port(
@@ -63,5 +62,5 @@ begin
     wait;
     end process;
     
-end Behavioral;
+end test_bench;
 
