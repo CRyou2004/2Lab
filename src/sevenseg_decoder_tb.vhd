@@ -27,16 +27,16 @@ begin
    test_process : process
    begin
     w_Hex <= x"0"; wait for 10 ns;
-    assert (w_seg_n = "1000000") report "Error with 0" severity failure;
+    assert (w_seg_n = "1000000") report "Error on 0" severity failure;
 
     w_Hex <= x"1"; wait for 10 ns;
-    assert (w_seg_n = "1111001") report "Error with 1" severity failure;
+    assert (w_seg_n = "1111001") report "Error on 1" severity failure;
     
     w_Hex <= x"E"; wait for 10 ns;
-    assert (w_seg_n = "0000110") report "Error with E" severity failure;
+    assert (w_seg_n = "0000110") report "Error on E" severity failure;
     
     w_Hex <= x"F"; wait for 10 ns;
-    assert (w_seg_n = "0001110") report "Error with F" severity failure;
+    assert (w_seg_n = "0001110") report "Error on F" severity failure;
     
     wait;
     end process;
