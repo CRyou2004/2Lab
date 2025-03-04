@@ -26,16 +26,16 @@ begin
         
    test_process : process
    begin
-    w_Hex <= x"0"; wait for 10ns;
+    w_Hex <= x"0"; wait for 10 ns;
     assert (w_seg_n = "1000000") report "Error with 0" severity failure;
 
-    w_Hex <= x"1"; wait for 10ns;
+    w_Hex <= x"1"; wait for 10 ns;
     assert (w_seg_n = "1111001") report "Error with 1" severity failure;
     
-    w_Hex <= x"E"; wait for 10ns;
+    w_Hex <= x"E"; wait for 10 ns;
     assert (w_seg_n = "0000110") report "Error with E" severity failure;
     
-    w_Hex <= x"F"; wait for 10ns;
+    w_Hex <= x"F"; wait for 10 ns;
     assert (w_seg_n = "0001110") report "Error with F" severity failure;
     
     wait;
