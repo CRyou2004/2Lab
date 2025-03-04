@@ -5,7 +5,7 @@ use ieee.numeric_std.all;
 entity sevenseg_decoder_tb is
 end sevenseg_decoder_tb;
 
-architecture test_bench of sevenseg_decoder_tb is
+architecture Behavioral of sevenseg_decoder_tb is
 
     component sevenseg_decoder is
     port(
@@ -18,7 +18,7 @@ architecture test_bench of sevenseg_decoder_tb is
     signal w_seg_n  : std_logic_vector(6 downto 0);
     
 begin
-    my_decoder_inst: sevenseg_decoder port map(
+    sevenseg_decoder_inst: sevenseg_decoder port map(
         i_Hex   => w_Hex,
         o_seg_n => w_seg_n
         );
@@ -41,5 +41,5 @@ begin
     wait;
     end process;
     
-end test_bench;
+end Behavioral;
 
