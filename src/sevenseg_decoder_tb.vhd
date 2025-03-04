@@ -63,5 +63,5 @@ begin
     wait;
     end process;
     
-    end test_bench;
+end Behavioral;
 
