@@ -1,6 +1,6 @@
-library IEEE;
-use IEEE.STD_LOGIC_1164.ALL;
-use IEEE.numeric_std.all;
+library ieee;
+use ieee.STD_LOGIC_1164.ALL;
+use ieee.numeric_std.all;
 
 entity sevenseg_decoder_tb is
 end sevenseg_decoder_tb;
